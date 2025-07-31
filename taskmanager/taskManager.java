@@ -19,7 +19,7 @@ public class taskManager {
         taskList.remove(taskObject);
     }
 
-    public List<task> getAllTasks(){
+    public List<task> getAllTasks(){ //NOTE: Not working correctly and giving back error in main, need to check docs for static / non static methods
         return taskList;
     }
 
