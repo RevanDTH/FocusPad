@@ -1,19 +1,31 @@
 package taskmanager;
 
 public class task {
-    public static void main(String[] args) {
-        System.out.println("TaskEditor package started . . .");
+    String title;
+    String uuid;
+    String description;
+    boolean isDone;
+
+    public task(String title, String uuid, String description, boolean isDone){
+        this.title = title;
+        this.uuid = uuid;
+        this.description = description;
+        this.isDone = isDone;
     }
 
-    public void addTask(String taskName, String taskDesc){
+    public String getTitle(){
+        return title;
     }
 
-    public void removeTask(String taskID){
+    public String getUuid(){
+        return uuid;
     }
 
-    public void getTask(String taskID){
+    public String getDescription(){
+        return description;
     }
 
-    public void editTask(String taskID, String taskName, String taskDesc, Boolean isSolved){
+    public boolean isDone(){
+        return isDone;
     }
 }
