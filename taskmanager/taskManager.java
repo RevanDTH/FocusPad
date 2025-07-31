@@ -11,11 +11,10 @@ public class taskManager {
     public void removeTask(String taskID){
     }
 
+    public void getAllTasks(){
+    }
+
     /*
     *     public void getTask(String taskID){}
     */
-
-
-    public void editTask(String taskID, String taskName, String taskDesc, Boolean isSolved){
-    }  
 }

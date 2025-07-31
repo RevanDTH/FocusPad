@@ -13,6 +13,24 @@ public class task {
         this.isDone = isDone;
     }
 
+    //setter
+    public void setTitle(String title){
+        this.title = title;
+    }
+
+    public void setDescription(String description){
+        this.description = description;
+    }
+
+    public void markAsDone(){
+        this.isDone = true;
+    }
+
+    public void markAsUnDone(){
+        this.isDone = false;
+    }
+
+    //getter
     public String getTitle(){
         return title;
     }
@@ -25,7 +43,7 @@ public class task {
         return description;
     }
 
-    public boolean isDone(){
+    public boolean getIsDone(){
         return isDone;
     }
 }
