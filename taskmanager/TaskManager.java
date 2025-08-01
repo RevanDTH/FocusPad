@@ -5,27 +5,27 @@ import java.util.List;
 //import java.util.stream.Stream;
 //import java.util.stream.Collectors;
 
-public class taskManager {
+public class TaskManager {
 
-    List<task> taskList = new ArrayList<task>();
+    List<Task> taskList = new ArrayList<Task>();
 
     public static void main(String[] args) {
         System.out.println("TaskEditor package started . . .");
     }
 
-    public void saveTask(task taskObject){
+    public void saveTask(Task taskObject){
         taskList.add(taskObject);
     }
 
-    public void removeTask(task taskObject){
+    public void removeTask(Task taskObject){
         taskList.remove(taskObject);
     }
 
-    public List<task> getAllTasks(){ 
+    public List<Task> getAllTasks(){ 
         return taskList;
     }
 
-    public task getTaskByTitle(String taskTitle){
+    public Task getTaskByTitle(String taskTitle){
 
         return taskList.stream()
             .filter(t -> t.getTitle().equals(taskTitle))
@@ -33,7 +33,7 @@ public class taskManager {
             .orElse(null);
     }
 
-    public task getTaskByUuid(String uuid){
+    public Task getTaskByUuid(String uuid){
 
         return taskList.stream()
             .filter(t -> t.getUuid().equals(uuid))

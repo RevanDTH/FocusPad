@@ -1,14 +1,16 @@
 package taskmanager;
 
-public class task {
+import java.util.UUID;
+
+public class Task {
     String title;
     String uuid;
     String description;
     boolean isDone;
 
-    public task(String title, String uuid, String description, boolean isDone){
+    public Task(String title, String description, boolean isDone){
         this.title = title;
-        this.uuid = uuid;
+        this.uuid = UUID.randomUUID().toString();
         this.description = description;
         this.isDone = isDone;
     }
