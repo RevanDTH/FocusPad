@@ -26,5 +26,8 @@ public class Main {
          System.out.println(task1.getUuid());
          System.out.println(task1.getIsDone());
 
+
+         System.out.println("[DEBUG] Task with certain uuid: ");
+         System.out.println(taskManager.getTaskByUuid("88888SD"));
     }
 }
