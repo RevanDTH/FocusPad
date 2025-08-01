@@ -40,4 +40,12 @@ public class TaskManager {
             .findFirst()
             .orElse(null);
     }
+
+    public void removeTaskByUuid(String uuid){
+        taskList.remove(getTaskByUuid(uuid));
+    }
+
+    public void removeTaskByTitle(String title){
+        taskList.remove(getTaskByTitle(title));
+    }
 }
