@@ -2,6 +2,8 @@ package taskmanager;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Stream;
+import java.util.stream.Collectors;
 
 public class taskManager {
 
@@ -19,8 +21,24 @@ public class taskManager {
         taskList.remove(taskObject);
     }
 
-    public List<task> getAllTasks(){ //NOTE: Not working correctly and giving back error in main, need to check docs for static / non static methods
+    public List<task> getAllTasks(){ 
         return taskList;
+    }
+
+    public task getTaskByTitle(String taskTitle){
+
+        return taskList.stream()
+            .filter(t -> t.getTitle().equals(taskTitle))
+            .findFirst()
+            .orElse(null);
+    }
+
+    public task getTaskByUuid(String uuid){
+
+        return taskList.stream()
+            .filter(t -> t.getUuid().equals(uuid))
+            .findFirst()
+            .orElse(null);
     }
 
     /*
