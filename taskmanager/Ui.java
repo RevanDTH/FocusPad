@@ -3,13 +3,13 @@ package taskmanager;
 //imports
 import java.util.Scanner;
 
-public class ui { 
+public class Ui { 
     public static void main(String[] args) {
         System.out.println("ui started . . .");
     }
 
 
-    public void printMainStartUI(){
+    public String printMainStartUI(){
         String MainUI = """
         == FocusPad ==
         1. Neue Aufgabe erstellen
@@ -19,6 +19,10 @@ public class ui {
         5. Beenden        
                 """;
         System.out.println(MainUI);
+        Scanner scanner = new Scanner(System.in);
+        String userInput = scanner.nextLine();
+        scanner.close();
+        return userInput;
     }
 
     public void printTaskUI(){

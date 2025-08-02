@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
         if(DebugMode){System.out.println("[DEBUG] FocusPad started . . .");}
         TaskManager TaskManager = new TaskManager();
-        ui uiHandler = new ui();
+        Ui uiHandler = new Ui();
         
         uiHandler.printMainStartUI();
 
