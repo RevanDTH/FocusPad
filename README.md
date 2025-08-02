@@ -1,3 +1,5 @@
+# WIP, NOT FUNCTIONAL AT THE MOMENT, DONT EVEN TRY TO RUN IT
+
 # FocusPad
 
 **FocusPad** is a minimal, terminal-based task manager designed for individual use.  
@@ -28,11 +30,11 @@ FocusPad is built for:
 ## 🛠️ Technical Overview
 
 - Language: **Java 17+**
-- No persistent storage: tasks exist in memory only
+- No persistent storage: tasks exist in memory only (for the moment, at release it will be stored locally)
 - Structured OOP design: `Task`, `TaskManager`, `UiHandler`
 - No external libraries or frameworks required
 
 ---
 
 ## 🗂️ Project Structure
-
+ TODO
